@@ -1,0 +1,374 @@
+body {
+    background-image: radial-gradient(circle, #1b2735, #090a0f); /* Fondo con gradiente */
+    color: #ffffff; /* Texto blanco */
+    font-family: 'mi-fuente', sans-serif; /* Aplicamos la fuente */
+}
+
+.menu-navegacion {
+    padding: 20px;
+    font-size: large; /* Tamaño de la letra */
+    display: flex; /* Usamos flexbox para el contenedor */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    list-style-type: none; /* Eliminamos los círculos de las viñetas */
+    padding: 14px 16px; /* Damos espacio interior a la caja */
+    text-align: center; /* Centramos todo en el centro */
+    border-radius: 10px; /* Esquinas redondeadas */
+    background: linear-gradient(90deg, #4a4a4a, #1a1a1a); /* Gradiente para el menu */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    
+}
+
+.menu-navegacion li {
+    display: inline; /* Cambiamos a inline para que los <li> estén en línea */
+    padding: 14px 16px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.menu-navegacion li:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Color al pasar el cursor */
+    border-radius: 20px;
+    box-shadow:  /* Sombras exteriores y interiores */
+        0 0 15px rgba(255, 255, 255, 0.5), 
+        0 0 7px rgba(255, 255, 255, 0.5) inset; 
+
+}
+
+.menu-navegacion li a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    display: block; /* Hace que el enlace ocupe todo el espacio del <li> */
+}
+
+.fondo_titulo {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    text-align: center; /* Centramos el texto dentro del div */
+    margin: 20px; /* Margen superior */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.titulo {
+    padding: 10px;
+    border-radius: 5px;
+    color: #e0e0e0; /* Color del texo */
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.3), /* Sombra para el texto */
+        0 0 20px rgba(255, 255, 255, 0.2);
+    transition: transform 0.8s ease /* Transición suave */
+
+}
+
+.titulo:hover {
+    transform: scale(1.1); /* Efecto de zoom */
+    text-shadow: /* Sombra para el texto */
+        0 0 15px rgba(255, 255, 255, 0.5),
+        0 0 30px rgba(255, 255, 255, 0.3);
+
+    /* Inspirado en un video */
+    background: linear-gradient(to right, red, #fff 50%); /* Gradiente para el texto */
+    background-size: 200% auto;        
+    -webkit-background-clip: text; /* Para navegadores WebKit (Chrome, Safari) */
+    background-clip: text; /* Para navegadores que soportan la propiedad estándar */
+    -webkit-text-fill-color: transparent;
+}
+
+
+main {
+    overflow: auto; /* Asegura que el main contenga el float */
+}
+
+aside {
+    float: right; /* Flota el aside a la derecha */
+    width: 320px; /* Ancho aside */
+    margin: 20px; /* Margen del aside */
+    background: rgba(255, 255, 255, 0.1); /* Fondo con transparencia */
+    color: e0e0e0; /* Color del texto */
+    padding: 10px; /* Relleno dentro del aside */
+    border-radius: 20px; /* Esquinas redondeadas */
+    border: solid 3px rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+aside img{ /* bordes redondeados para las imagenes */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+aside div {
+    border-radius: 10px; 
+    margin: 30px;
+    padding: 15px; 
+    transform: scale(1.03); /* Transicion suave */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3); /* Efecto neon */
+    background-color: rgba(0, 0, 0, 0.7); /* Mas oscuro al hover */
+    transition: transform 0.8s ease; /* Tiempo para la transicion */
+}
+
+aside div:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); /* Sombra al pasar el cursor */
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.video {
+    display: flex; /* Usamos Flexbox */
+    flex-direction: column; /* Colocamos el titulo y el video en columna */
+    align-items: center; /* Centramos horizontalmente */
+    justify-content: center; /* Centramos verticalmente */
+    padding-bottom: 20px; /* Espacio inferior */
+    
+}
+
+video{
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.4);
+}
+
+.columnas{
+    margin: 20px;
+    padding: 10px; /* Espaciado interior */
+    border-radius: 10px; /* Esquinas dedondeadas */
+    border: 2px solid transparent; /* Anchura y borde transparente */
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    column-count: 2; /* Creamos 2 columnas */
+    column-gap: 50px; /* Damos separacion  */
+    column-rule: groove rgba(255, 255, 255, 0.3); /* Linea que separa las columnas */
+    transition: background 0.6s ease-in-out, transform 0.6s ease-in-out; /* Transición suave, comienza lento y termina lento */
+
+}
+
+.columnas:hover{
+    background: linear-gradient(90deg, #2a2a2a, #4a4a4a); /* Cambio de fondo al hacer hover */
+    color: #ffffff; /* Cambia el color del texto al hacer hover */
+    transform: scale(1.005); /* Efecto de ampliacion */
+}
+
+.cita{
+    font-family: Georgia;
+    width:50%; /* Ancho del Blockquote */
+    text-align: center; 
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    margin: 40px auto; /* Con magin auto consegimos que se centre en el centro de la pagina */
+    border-radius: 5px;
+    border-top-right-radius: 25px; /* Lado superior derecho redondeado */
+    border-bottom-left-radius: 25px; /* Lado inferior izquierdo redondeado */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+    transition: border 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease, border-radius 0.5s ease; /* Duraciond e los efectos */
+}
+
+.cita:hover{
+    transform: scale(1.02); /* Efecto ampliacion */
+    border: solid 2px rgba(255, 255, 255, 0.8); /* Borde */
+    border-bottom-right-radius: 25px; /* Lado inferior derecho redondeado */
+    border-top-left-radius: 25px; /* Lado superior izquierdo redondeado */
+    box-shadow:  /* Sombras exteriores y interiores */
+        0 0 30px rgba(255, 255, 255, 0.5), 
+        0 0 15px rgba(255, 255, 255, 0.5) inset; 
+
+}
+
+.lenguajes{
+    width: 85%; /* Ancho de la seccion para que no se superposicione el aside */
+    margin: 20px auto; /* Con el margin auto lo centramos en el medio */
+    padding: 10px; /* Espaciado interior */
+    border: solid 2px #6a11cb; /* Borde transparente */
+    border-radius: 20px; /* Esquinas redondeadas */
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Gradiente */
+    text-align: center;
+    transition: border-radius 0.5s ease, transform 0.5s ease; /* Tiempo para la transicion de ampliacion y de las esquinas */
+    
+}
+
+.lenguajes:hover{
+    transform: scale(1.002); /* Efecto ampliacion */
+    border-top-left-radius: 100px; /* Borde izquierdo superior redondeado */
+    border-top-right-radius: 100px; /* Borde derecho superior redondeado */
+    border-bottom-right-radius: 30px; /* Border derecho inferiror redondeados */
+    border-bottom-left-radius: 30px; /* Border izquierdo inferiror redondeados */
+    border: solid 2px rgb(255, 255, 255, 0.8); /* Damos un efecto neon */
+    box-shadow: 0px 0px 40px rgb(255, 255, 255, 0.8);
+}
+
+
+.Proyectos {
+    display: flex; /* Usamos flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin: 30px; /* Margen alrededor */
+    background: rgba(30, 30, 30, 0.8);
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Transición suave */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Bordes */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Sombra */
+    transition: transform 0.7s ease; /* Tiempo para la transicion */
+}
+.Proyectos:hover{
+    transform: scale(1.005); /* Efecto de ampliación */
+    border: 2px solid rgba(255, 215, 0, 0.8); /* Borde efecto neon */
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.5); /* Mas brillo */
+}
+
+.img {
+    margin-right: 50px; /* Espacio entre la imagen y el contenido */
+}
+
+.Proyectos img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+.beneficios{
+    border-radius: 15px;
+
+    padding: 30px;
+    display: flex; /* Usamos flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin: 20px; /* Margen alrededor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transicion suave */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5)); /* Fondo con degradado */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Bordes */
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.2); /* Sombra */
+    transition: transform 0.7s ease; /* Tiempo para la transicion */
+
+}
+
+.beneficios:hover{
+    transform: scale(1.005); /* Efecto de ampliacion */
+    border: 2px solid rgba(255, 0, 255, 0.8); /* Borde efecto neon morado */
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.5); /* Mas brillo */
+}
+
+.img {
+    margin-left: 50px; /* Espacio entre la imagen y el contenido */
+}
+
+.beneficios img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+fieldset{
+    display: flex; /* Usar flexbox para la distribucion */
+    flex-direction: column; /* Colocamos los elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
+    border-radius: 10px; /* Esquinas redondeadas */
+    margin: 20px; /* Margen del contenedor */
+    padding: 20px; /* Espacio interior */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)); /* Fondo */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Borde */
+
+}
+
+legend {
+    font-size: 1.5em; /* Tamaño del texto */
+    color: #fff; /* Color del texto */
+    padding: 0 10px; /* Espacio a los lados */
+}
+
+.contenedor {
+    display: flex; /* Usar flexbox para los divs */
+    justify-content: space-between; /* Espacio entre los divs */
+    width: 100%; /* Ancho completo */
+}
+
+.div1, .div2 {
+    flex: 1; /* Cada div ocupa el mismo espacio */
+    margin: 0 50px; /* Espacio entre los divs */
+}
+
+fieldset p {
+    margin: 10px 0; /* Espacio entre los p */
+}
+
+fieldset input, fieldset textarea{
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%; /* Ancho completo */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borde */
+    transition: box-shadow 0.5s ease, background-color 0.5s ease; /* Tiempo para la transicion */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo */
+    
+}
+
+fieldset input:hover, fieldset textarea:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Sombras */
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo mas claro */
+}
+
+.botones {
+    display: flex; /* Usar flexbox para los botones */
+    justify-content: center; /* Espacio entre los botones */
+    width: 100%; /* Asegura que los botones ocupen todo el ancho */
+    margin-top: 10px; /* Espacio superior */
+}
+
+form input[type="submit"], form input[type="reset"] {
+    font-size: medium; /* Tamaño de la letra */
+    font-weight: bold; /* Letra negrita */
+    letter-spacing: 0.20px; /* Espacio entre letras */
+    background: linear-gradient(90deg, #ff1500, #002db5); /* Gradiente */
+    border: none; /* Sin borde */
+    color: #fff; /* Color del texto */
+    margin: 20px;
+    padding: 10px 0px; /* Esapcio interior */
+    border-radius: 20px; /* Esquinas redondeadas */
+    min-width: 100px; /* Ancho minimo para los botones */
+    max-width: 150px; /* Ancho maximo para los botones */
+    transition: background 0.3s ease, transform 0.2s ease; /* Transicion suave */
+}
+
+form input[type="submit"]:hover, form input[type="reset"]:hover {
+    background: linear-gradient(90deg, #002db5, #ff1500); /* Invertir colores al hacer hover */
+    transform: scale(1.03); /* Efecto de ampliacion */
+}
+
+fieldset input:hover::placeholder {
+    color: black; /* Cambia el color del placeholder al hacer hover */
+}
+
+fieldset textarea:hover::placeholder {
+    color: black; /* Cambia el color del placeholder al hacer hover */
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+.redes {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .redes li {
+    margin: 0 50px; /* Espacio entre cada red social */
+    list-style-type: none;
+    transition: transform 0.5s ease;
+
+  }
+
+  .redesLi a:hover {
+    transform: scale(1.05);
+  }
+
+  .redesLi img{
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.7)); /* Sombra para las imágenes */
+  }
+  
+
+
+
+
+
